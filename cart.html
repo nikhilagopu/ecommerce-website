@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
+             .card {
+                margin-bottom: 10px;
+                border-width: 5px;
+                border-color: black;
+                border-radius: 5px;
+
+             }
+             .quantity-form{
+                display: flex;
+             }
+             .quantity-form input{
+                width:50px;
+                margin:0 10px;
+             }
+             .card-footer,.card-header{
+                background-color: wheat;
+             }
+    
+             .btn-primary2{
+                background-color: black;
+                border-color: black;
+                color: wheat;
+                width: 200px;
+             }
+             .btn-primary2:hover{
+                background-color: wheat;
+                color: black;
+                border-color: black;
+             }
+        
+        </style>
+    </head>
+    <body>
+        <!--header-->
+        <header class="header">
+            <div class="logo">
+                <a href="home.html"><img src="img/logo.png"></a>
+            </div>
+            <!--searchbox,login,cart-->
+            <div class="searchbox">
+                <input type="text" placeholder="search here....">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="buttons">
+                <a href="login.html"><button id="loginButton" class="btn btn-primary">Login</button></a>
+                <a class="cart" href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </header>
+        <!--seconadry header-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" aria-controls="navbarNav" data-target="#navbarNav"></button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">All Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Women</a>
+                            <div class="dropdown-menu" >
+                                <a class="dropdown-item" href="womenAll.html">All Products</a>
+                                <a class="dropdown-item" href="Dresses.html">Dresses</a>
+                                <a class="dropdown-item" href="wpants.html">Pants</a>
+                                <a class="dropdown-item" href="skirts.html">Skirts</a>
+                            </div>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Men</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="menAll.html">All Products</a>
+                                <a class="dropdown-item" href="shirts.html">Shirts</a>
+                                <a class="dropdown-item" href="pants.html">Pantss</a>
+                                <a class="dropdown-item" href="hoodies.html">Hoodies</a>
+                            </div>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--details of cart-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>Cart</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/greenfrock.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Product 1</h5>
+                            <p>Price:20$</p>
+                            <button class="btn btn-danger"><i class="fas fa-trash"></i>Delete</button>
+                        </div>
+                        <div class="col-md-4">
+                            <form class="quantity-form">
+                                <button type="button" class="btn btn-secondary quantity-btn minus-btn"><i class="fas fa-minus"></i></button>
+                                <input type="text" class="form-control quantity-input" value="1">
+                                <button type="button" class="btn btn-secondary quantity-btn plus-btn"><i class="fas fa-plus"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <b>Product Details</b>
+                        </div>
+                        <div class="card-body">
+                            <p>Product Total:$20</p>
+                            <p>
+                                Shipping:$5
+                            </p>
+                            <hr>
+                            <p>Total:$25</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary2 btn-block">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4><a href="womenAll.html">Women</a></h4>
+                        <ul>
+                            <li><a href="dresses.html">Dresses</a></li>
+                            <li><a href="wpants.html">Pants</a></li>
+                            <li><a href="skirts.html">Skirts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4><a href="menAll.html">Men</a></h4>
+                        <ul>
+                            <li><a href="shirts.html">Shirts</a></li>
+                            <li><a href="pants.html">Pants</a></li>
+                            <li><a href="hoodies.html">Hoodies</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4><a href="kids.html">Kids</a></h4>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12 text-align-center">
+                        <p>&copy;2024 Clothz.All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded",function() {
+                const quantityForms= document.querySelectorAll('.quantity-form');
+
+                quantityForms.forEach(form=> {
+                    const input=form.querySelector('.quantity-input');
+                    const minusButton = form.querySelector('.minus-btn');
+                    const plusButton = form.querySelector('.plus-btn');
+
+                    minusButton.addEventListener('click',()=>{
+                        let quantity= parseInt(input.value);
+                        if(quantity>1){
+                            input.value=quantity-1;
+                        }
+                    });
+
+                    plusButton.addEventListener('click',()=>{
+                        let quantity= parseInt(input.value);
+                        input.value=quantity+1;
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
